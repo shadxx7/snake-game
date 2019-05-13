@@ -1,2 +1,3 @@
-# snake-game
-Snake Game developed in JavaScript
+# Snake Game
+
+Snake Game developed in JavaScript using the HTML5 canvas api.
