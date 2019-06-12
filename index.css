@@ -3,12 +3,21 @@
   src: url(./assets/fonts/press-start.ttf);
 }
 
-body {
-  background: linear-gradient(44deg, #32cfa7, #6200ff, #ffa400, #8300ff);
-  background-size: 600% 600%;
-  -webkit-animation: AnimationName 20s ease infinite;
-  -moz-animation: AnimationName 20s ease infinite;
-  animation: AnimationName 20s ease infinite;
+@media only screen and (max-width: 600px) {
+  body {
+    background: white;
+    background-size: auto;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  body {
+    background: linear-gradient(44deg, #32cfa7, #6200ff, #ffa400, #8300ff);
+    background-size: 600% 600%;
+    -webkit-animation: AnimationName 20s ease infinite;
+    -moz-animation: AnimationName 20s ease infinite;
+    animation: AnimationName 20s ease infinite;
+  }
 }
 
 @-webkit-keyframes AnimationName {

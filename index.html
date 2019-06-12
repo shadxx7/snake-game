@@ -48,26 +48,34 @@
   </head>
 
   <body>
-    <!-- Score -->
-    <div class="animated zoomIn center" id="counter_div">
-      <h5 id="counter">SCORE:</h5>
+    <div class="hide-on-med-and-up">
+      <h4 class="center">
+        This website is not supported on mobile devices😭
+      </h4>
     </div>
 
-    <!-- Canvas for the snake game -->
-    <div class="center animated slideInDown" id="snake_div">
-      <canvas class="z-depth-5" id="gc" width="400" height="400"></canvas>
-    </div>
+    <div class="hide-on-small-only">
+      <!-- Score -->
+      <div class="animated zoomIn center" id="counter_div">
+        <h5 id="counter">SCORE:</h5>
+      </div>
 
-    <!-- Press Info -->
-    <div class="animated slideInRight center" id="press">
-      <h6>
-        PRESS
-        <img
-          style="margin-top: 10px; width: 60px; height: 40px;"
-          src="assets/images/arrow-keys.png"
-        />
-        TO START
-      </h6>
+      <!-- Canvas for the snake game -->
+      <div class="center animated slideInDown" id="snake_div">
+        <canvas class="z-depth-5" id="gc" width="400" height="400"></canvas>
+      </div>
+
+      <!-- Press Info -->
+      <div class="animated slideInRight center" id="press">
+        <h6>
+          PRESS
+          <img
+            style="margin-top: 10px; width: 60px; height: 40px;"
+            src="assets/images/arrow-keys.png"
+          />
+          TO START
+        </h6>
+      </div>
     </div>
 
     <!-- Footer for snake game -->
