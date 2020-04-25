@@ -4,7 +4,7 @@
 var counter = 0;
 document.getElementById("counter").innerHTML = `SCORE: ${counter}`;
 
-window.onload = function() {
+window.onload = function () {
   canv = document.getElementById("gc");
   ctx = canv.getContext("2d");
   document.addEventListener("keydown", keyPush);
@@ -35,7 +35,7 @@ function game() {
   ctx.fillStyle = "#1b1b1b";
   ctx.fillRect(0, 0, canv.width, canv.height);
 
-  ctx.fillStyle = "blue";
+  ctx.fillStyle = "lime";
   for (var i = 0; i < trail.length; i++) {
     ctx.fillRect(trail[i].x * gs, trail[i].y * gs, gs - 2, gs - 2);
     if (trail[i].x == px && trail[i].y == py) {
@@ -56,7 +56,7 @@ function game() {
     ax = Math.floor(Math.random() * tc);
     ay = Math.floor(Math.random() * tc);
   }
-  ctx.fillStyle = "green";
+  ctx.fillStyle = "firebrick";
   ctx.fillRect(ax * gs, ay * gs, gs - 2, gs - 2);
 }
 function keyPush(evt) {
